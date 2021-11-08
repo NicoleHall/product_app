@@ -27,3 +27,5 @@ If the test suite passes, you'll be ready to run the app in a local server:
 ```
 $ rails server
 ```
+
+Visit applicaiton at http://127.0.0.1:3000
