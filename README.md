@@ -2,7 +2,7 @@
 
 ## Getting started
 
-To get started with the app, clone the repo and then install the needed gems:
+To get started with the app, clone the repo, change directories into the clonde repo and then install the needed gems:
 
 ```
 $ gem install bundler -v 2.2.17
