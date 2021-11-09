@@ -20,5 +20,14 @@ class ProductsCreateTest < ActionDispatch::IntegrationTest
     assert_select 'div.field_with_errors'
   end
 
+  test "valid product creation" do
+    get products_path
+    assert_difference 'Product.count', 1 do
+      post products_path, params: { product: { name:  "Candle", ingredient: "Wax",} }
+    end
+    follow_redirect!
+    assert_template 'products/show'
+  end
+
 
 end
